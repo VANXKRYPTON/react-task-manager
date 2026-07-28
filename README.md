@@ -1,70 +1,588 @@
-# Getting Started with Create React App
+# 🚀 Task Manager Pro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)
+![CSS](https://img.shields.io/badge/CSS3-Glassmorphism-blue?logo=css3)
+![LocalStorage](https://img.shields.io/badge/Storage-LocalStorage-green)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-In the project directory, you can run:
+### A Modern Productivity & Task Management Application Built with React
 
-### `npm start`
+Manage tasks efficiently with timers, priorities, notes, due dates, notifications, exports, dark mode, and an elegant glassmorphism UI.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# 📖 Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Task Manager Pro is a feature-rich React application designed to help users organize daily work, study schedules, personal goals, and productivity.
 
-### `npm run build`
+Unlike a traditional To-Do List, this project includes a built-in countdown timer, browser notifications, PDF/CSV export, task prioritization, notes, overdue tracking, favorite tasks, and a responsive dashboard.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The project demonstrates modern React development using Hooks, reusable components, Local Storage, state management, and responsive UI principles.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# ✨ Features
 
-### `npm run eject`
+## ✅ Task Management
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Create Tasks
+- Edit Tasks
+- Delete Tasks
+- Mark Complete
+- Task Categories
+- Priority Levels
+- Due Dates
+- Task Notes
+- Favorite (Pinned) Tasks
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ⏳ Productivity Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Countdown Timer
+- Start Timer
+- Pause Timer
+- Stop Timer
+- Live Progress Bar
+- Remaining Time
+- Browser Notifications
+- Alarm Sound on Completion
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📅 Organization
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Search Tasks
+- Status Filter
+- Category Filter
+- Sort by Newest
+- Sort by Oldest
+- Today's Tasks Counter
+- Overdue Task Detection
+- Dashboard Statistics
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📊 Dashboard
 
-### Analyzing the Bundle Size
+Displays:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Total Tasks
+- Completed Tasks
+- Pending Tasks
+- Running Timers
+- Today's Tasks
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📁 Export
 
-### Advanced Configuration
+Export all tasks to
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- PDF
+- CSV
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🎨 UI Features
 
-### `npm run build` fails to minify
+- Dark Mode
+- Light Mode
+- Glassmorphism Design
+- Neon Glow Effects
+- Responsive Layout
+- Hover Animations
+- Active Row Highlight
+- Smooth Button Animations
+- Modern Dashboard Cards
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 💾 Storage
+
+- Local Storage Support
+- Automatic Save
+- Automatic Restore
+- Theme Persistence
+
+---
+
+# 🛠 Tech Stack
+
+| Technology | Purpose |
+|------------|----------|
+| React | Frontend Framework |
+| JavaScript ES6 | Programming |
+| CSS3 | Styling |
+| HTML5 | Structure |
+| Local Storage | Persistent Data |
+| jsPDF | PDF Export |
+| jspdf-autotable | PDF Tables |
+| FileSaver.js | CSV Download |
+| React Hooks | State Management |
+
+---
+
+# 📂 Project Structure
+
+```
+task-manager-pro
+│
+├── public
+│   ├── alarm.mp3
+│   ├── favicon.ico
+│   └── index.html
+│
+├── src
+│   ├── components
+│   │   ├── Dashboard.jsx
+│   │   ├── ExportButtons.jsx
+│   │   ├── NotificationModal.jsx
+│   │   ├── SearchBar.jsx
+│   │   ├── StatsCards.jsx
+│   │   ├── TaskInput.jsx
+│   │   ├── TaskItem.jsx
+│   │   ├── TaskList.jsx
+│   │   ├── ThemeToggle.jsx
+│   │   └── Toolbar.jsx
+│   │
+│   ├── utils.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+│
+├── package.json
+└── README.md
+```
+
+---
+
+# ⚙ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/task-manager-pro.git
+```
+
+Move into the project
+
+```bash
+cd task-manager-pro
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm start
+```
+
+Application will run at
+
+```
+http://localhost:3000
+```
+
+---
+
+# 📦 Required Packages
+
+```bash
+npm install jspdf
+npm install jspdf-autotable
+npm install file-saver
+```
+
+---
+
+# 🚀 Application Workflow
+
+```
+User
+
+      │
+
+      ▼
+
+Create Task
+
+      │
+
+      ▼
+
+Store in Local Storage
+
+      │
+
+      ▼
+
+Dashboard Updates
+
+      │
+
+      ▼
+
+Start Timer
+
+      │
+
+      ▼
+
+Countdown
+
+      │
+
+      ▼
+
+Timer Ends
+
+      │
+
+      ▼
+
+Play Alarm
+
+      │
+
+      ▼
+
+Browser Notification
+
+      │
+
+      ▼
+
+Task Completed
+```
+
+---
+
+# 🧩 Major Components
+
+## TaskInput
+
+Responsible for
+
+- Creating tasks
+- Priority
+- Category
+- Due Date
+- Notes
+- Timer
+
+---
+
+## TaskList
+
+Responsible for
+
+- Dashboard
+- Statistics
+- Task Table
+
+---
+
+## TaskItem
+
+Responsible for
+
+- Edit
+- Delete
+- Favorite
+- Timer Controls
+- Progress Bar
+- Notes
+- Due Date
+- Overdue Detection
+
+---
+
+## ThemeToggle
+
+Responsible for
+
+- Dark Mode
+- Light Mode
+
+---
+
+## ExportButtons
+
+Responsible for
+
+- PDF Export
+- CSV Export
+
+---
+
+## NotificationModal
+
+Responsible for
+
+- Completion Popup
+
+---
+
+# 📊 Dashboard Cards
+
+✔ Total Tasks
+
+✔ Completed Tasks
+
+✔ Pending Tasks
+
+✔ Running Tasks
+
+✔ Today's Tasks
+
+---
+
+# 🎯 Task Properties
+
+Each task stores
+
+```javascript
+{
+ id,
+ text,
+ category,
+ priority,
+ dueDate,
+ notes,
+ duration,
+ remainingTime,
+ running,
+ completed,
+ favorite,
+ createdAt
+}
+```
+
+---
+
+# 🔔 Notification System
+
+When a timer finishes
+
+- Plays Alarm
+- Browser Notification
+- Completion Popup
+- Marks Task Completed
+
+---
+
+# 🌙 Theme System
+
+Supports
+
+- Dark Theme
+- Light Theme
+
+Theme preference is automatically saved in Local Storage.
+
+---
+
+# 📈 Progress Tracking
+
+Each task displays
+
+- Duration
+- Remaining Time
+- Live Progress Bar
+- Completion Percentage
+
+---
+
+# 📁 Export System
+
+Users can export all tasks as
+
+### PDF
+
+Includes
+
+- Task
+- Category
+- Priority
+- Due Date
+- Status
+
+### CSV
+
+Exports the complete task list for Excel or Google Sheets.
+
+---
+
+# 📱 Responsive Design
+
+Optimized for
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile Devices
+
+---
+
+# 🎨 UI Highlights
+
+- Glassmorphism
+- Neon Glow
+- Responsive Cards
+- Animated Buttons
+- Interactive Table
+- Smooth Hover Effects
+- Active Row Highlight
+
+---
+
+# 📌 Future Improvements
+
+- Drag & Drop Tasks
+- Firebase Authentication
+- Cloud Database
+- Calendar View
+- Weekly Analytics
+- Charts
+- Team Collaboration
+- Voice Commands
+- AI Task Suggestions
+- Email Reminders
+- Pomodoro Sessions
+- Recurring Tasks
+- Mobile App Version
+
+---
+
+# 🧠 React Concepts Used
+
+- Functional Components
+- Props
+- useState
+- useEffect
+- Conditional Rendering
+- Event Handling
+- Component Communication
+- Local Storage
+- Dynamic Styling
+- Reusable Components
+
+---
+
+# 🎓 Learning Outcomes
+
+This project demonstrates practical knowledge of
+
+- React.js
+- State Management
+- Hooks
+- JavaScript ES6
+- CSS3
+- Responsive Design
+- Component Architecture
+- Local Storage
+- Browser APIs
+- Notifications
+- File Export
+- UI/UX Design
+
+---
+
+# 📸 Screenshots
+
+## Dashboard
+
+_Add screenshot here_
+
+---
+
+## Dark Mode
+
+_Add screenshot here_
+
+---
+
+## Task Table
+
+_Add screenshot here_
+
+---
+
+## Timer Running
+
+_Add screenshot here_
+
+---
+
+## PDF Export
+
+_Add screenshot here_
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit changes
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+---
+
+# 📝 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author
+
+**Aditya Kumar**
+
+**B.Tech Computer Science & Engineering**
+
+**SRM Institute of Science and Technology**
+
+GitHub: https://github.com/VANXKRYPTON
+
+LinkedIn: https://www.linkedin.com/in/aditya-kumar-ak2653/
+
+---
+
+<div align="center">
+
+## ⭐ If you like this project, don't forget to Star the repository!
+
+**Made with ❤️ using React**
+
+</div>
