@@ -128,25 +128,26 @@ function TaskItem({
           {formatTime(task.remainingTime)}
         </span>
       </td>
+{/* Progress */}
+<td className="progress-cell">
+  <div className="progress">
+    <div
+      className="fill"
+      style={{
+        width: `${progress}%`,
+      }}
+    />
+  </div>
 
-      {/* Progress */}
-      <td style={{ minWidth: "180px" }}>
-        <div className="progress">
-          <div
-            className="fill"
-            style={{
-              width: `${progress}%`,
-            }}
-          />
-        </div>
+  <span className="progress-text">
+    {Math.round(progress)}%
+  </span>
+</td>
 
-        <small>{Math.round(progress)}%</small>
-      </td>
-
-      {/* Created */}
-      <td>
-        {new Date(task.createdAt).toLocaleDateString()}
-      </td>
+{/* Created */}
+<td>
+  {new Date(task.createdAt).toLocaleDateString()}
+</td>
 
       {/* Favorite */}
       <td className="action-cell">
@@ -187,51 +188,60 @@ function TaskItem({
       </td>
 
       {/* Timer */}
-      <td className="action-cell timer-cell">
-        {!task.running ? (
-          <button
-            className="start-btn"
-            onClick={(e) => {
-              e.stopPropagation();
-              startTimer(task.id);
-            }}
-          >
-            ▶ Start
-          </button>
-        ) : (
-          <button
-            className="pause-btn"
-            onClick={(e) => {
-              e.stopPropagation();
-              pauseTimer(task.id);
-            }}
-          >
-            ⏸ Pause
-          </button>
-        )}
+<td className="timer-cell">
+  <div className="timer-buttons">
+    {!task.running ? (
+      <button
+        className="start-btn"
+        onClick={(e) => {
+          e.stopPropagation();
+          startTimer(task.id);
+        }}
+      >
+        ▶ Start
+      </button>
+    ) : (
+      <button
+        className="pause-btn"
+        onClick={(e) => {
+          e.stopPropagation();
+          pauseTimer(task.id);
+        }}
+      >
+        ⏸ Pause
+      </button>
+    )}
 
-        <button
-          className="stop-btn"
-          onClick={(e) => {
-            e.stopPropagation();
-            stopTimer(task.id);
-          }}
-        >
-          ⏹ Stop
-        </button>
-      </td>
+    <button
+      className="stop-btn"
+      onClick={(e) => {
+        e.stopPropagation();
+        stopTimer(task.id);
+      }}
+    >
+      ⏹ Stop
+    </button>
+  </div>
+</td>
 
       {/* Delete */}
-      <td className="action-cell">
-        <button
-          className="delete-btn"
-          onClick={(e) => {
-            e.stopPropagation();
-            deleteTask(task.id);
-          }}
-        >
-          🗑 Delete
-        </button>
+<td className="delete-cell">
+  <button
+    className="delete-btn"
+    onClick={(e) => {
+      e.stopPropagation();
+      deleteTask(task.id);
+    }}
+  >
+    🗑 Delete
+  </button>
+
+        {/*Remaining Time*/}
+        <td>
+    <span className="remaining-time">
+        {formatTime(task.remainingTime)}
+    </span>
+</td>
       </td>
     </tr>
   );
